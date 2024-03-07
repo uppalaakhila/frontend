@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bs.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+
+
+/* Adjustments for screens smaller than 436px */
+@media (max-width: 436px) {
+  .d-block {
+    width: 5%; /* Adjust image width to fit smaller screens */
+    height: 5%; /* Maintain aspect ratio */
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images stay in the same row */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  }
+
+  .card-body {
+    order:inherit; /* Move card body under the carousel */
+    text-align:end; /* Center align text */
+  }
+}
+
+/* For larger screens */
+
+/* Adjustments for screens smaller than 436px */
+@media (max-width: 436px) {
+  .d-block {
+    max-width: 5%; /* Ensure images do not exceed screen width */
+    height: 6%; /* Maintain aspect ratio */
+    margin: 2%; /* Remove any default margins */
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images stay in the same row */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    margin: 1%; /* Remove any default margins */
+    padding: 1%; /* Remove any default padding */
+  }
+
+  .carousel-item {
+    padding: 1%; /* Remove any default padding */
+  }
+
+  .card-body {
+    order: 1; /* Move card body under the carousel */
+ 
+  }
+}
+
+
+
+
+
+    .btn {
+      background-color: transparent;
+      color: white;
+      position: relative;
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 690px;
+      border-radius: 40px;
+      border: 3px solid white;
+    }
+
+    .card-title {
+      margin-top: 0px;
+      margin-left: 650px;
+      font-size: 3rem;
+      color: white;
+    }
+
+    .card-text {
+      margin-left: 650px;
+      padding-top: 40px;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .form-control {
+      margin: 30px;
+      margin-left: 0px;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .d-block {
+      width: 550px;
+      height: 780px;
+
+    }
+
+    .img {
+      margin-left: 1100px;
+      margin-top: 0px;
+      padding-left: 5px;
+      padding-top: 100px;
+    }
+
+    .btn1 {
+      color: white;
+      margin-left: 20px;
+      margin-right: 400px;
+      border-radius: 400px;
+      border: 3px solid white;
+      text-decoration: none;
+    }
+    .popover {
+            max-width: 100%;
+            height: auto;
+            background-color: cornsilk;
+            top: 10%;
+            left: 70%;
+            transform: translate(-10px, -50%);
+        }
+  </style>
+</head>
+
+<body>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="2000">
+        <img src="https://pixahive.com/wp-content/uploads/2021/05/Bharat-Natyam-Dancer-443053-pixahive.jpg
+          " class="d-block " alt="...">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="https://pixahive.com/wp-content/uploads/2021/05/Bharat-Natyam-Dancer-443033-pixahive.jpg
+        " class="d-block " alt="...">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img
+          src="https://pixahive.com/wp-content/uploads/2021/05/A-female-classical-dancer-443061-pixahive-681x1024.jpg"
+          class="d-block " alt="...">
+      </div>
+      <div class="card-body">
+        <img src="https://wallpapercave.com/wp/wp3240954.jpg" alt="" class="img" width="220px">
+        <h5 class="card-title">Register with Temple of Dance</h5>
+        <p class="card-text">Register with us today to bring life to your dream, ignite the passion in you and become an
+          integral part of Temple of Dance. You can now register with us through our online registration form and follow
+          your dream.</p>
+      </div>
+      <button class="btn btn-light" data-toggle="modal" data-target="#registrationModal"><b>REGISTER NOW</b></button>
+    </div>
+  </div>
+  <!-- Registration Modal -->
+  <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">Register Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <form id="registrationForm">
+        <div class="modal-body">
+          <input class="form-control" type="text" placeholder="Name">
+          <input class="form-control" type="text" placeholder="  Email ID">
+          <input class="form-control" type="text" placeholder="Phone No">
+          <input class="form-control" type="text" placeholder="Address">
+        </div>
+        <button type="submit" class="btn1 btn-primary" onsubmit="registersuccess()" >Submit</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Registration Success Popover -->
+<div id="registrationSuccess" class="popover bs-popover-top" role="tooltip" style="display: none;">
+  <div class="arrow"></div>
+  <h3 class="popover-header">Registration Successful!</h3>
+  <div class="popover-body">
+      Your registration has been successfully completed.
+      <button type="submit" class="btn1 btn-light" onsubmit="registersuccess()" ><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html">okay</a></button>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      $('#registrationSuccess').show().fadeOut();
+      $('#registrationModal').modal('hide');
+      setTimeout(function () {
+          window.location.href = "file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html"; // Replace index.html with your homepage URL
+      },3000); // Redirect after 3 seconds
+  });
+</script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- https://i.pinimg.com/originals/5c/02/ef/5c02efe86d5487fdfeca9f8d6a194574.jpg -->
+
+https://wallpapercave.com/wp/wp3240954.jpg

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-zrp/lOFPVQM57RStwzYJ+JhrBEQvXtnJzA4XQPQp1JRFlVmaoG7YTXDWwERjZW6l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Frequently Asked Questions</title>
+
+    <style>
+        .faq-container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            cursor: pointer;
+
+            font-family: poppins;
+            color: black;
+            padding: 4%;
+            font-size: 1.5rem;
+            margin-left: 15%;
+        }
+
+        .faq-answer {
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar-brand img {
+            width: 140px;
+            height: 90px;
+            position: relative;
+            left: 8%;
+        }
+
+        .navbar .nav-link {
+            color: black;
+            font-family: 5rem;
+        }
+
+        .navbar .nav-link:hover {
+            color: purple;
+        }
+
+        .navbar .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .dropdown-item {
+            color: blue;
+        }
+
+        .navbar .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Sticky Navbar */
+        .sticky-top {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+
+        .footer {
+            padding: 40px 0;
+            margin-top: 5%;
+        }
+
+        .footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer a:hover {
+            color: #be0d7a;
+        }
+
+        .ques {
+            color: brown;
+            font-family: poppins;
+            font-size: 3.2rem;
+            margin-left: 490px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#">
+            <img src="navlogo.png" alt="">
+        </a>
+        <img src="https://www.transparentpng.com/thumb/dancing/Indian-outfit-and-dancing-girl-design-png-transparent-gOihd2.png"
+            width="7%" height="6%" class="pic1">
+        <img src="pic3.png"
+            width="7%" height="7%" class="pic3">
+        <img src="pic4.png" width="7%" height="6%" class="pic4">
+        <img src="pic5.png" width="7%" height="6%"
+            class="pic5">
+        <img src="pic7.png" width="6%" height="5%" class="pic7">
+        <img src="pic8.png" width="7%" height="6%"
+            class="pic8">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html"><i
+                            class="fas fa-home"></i> HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html#" id="navbarDropdownCourses" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-film"></i> COURSES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCourses">
+                        <a class="dropdown-item"
+                            href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html#">DANCE</a>
+                        <a class="dropdown-item" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/danceworkshop.html">DANCE WORKSHOP</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownLocation" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-map-marker-alt"></i> LOCATION
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownLocation">
+                        <a class="dropdown-item" href="https://maps.app.goo.gl/735TghxAsDbQ7hqh7">Address: Road No.
+                            45,JubileHills, Hyderabad, Telangana 500034</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p class="ques">Frequently Asked Questions</p>
+
+    <div class="container">
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq1')">* What are the dance forms taught in Temple of
+                    Dance?</div>
+                <div id="faq1" class="faq-answer">
+                    <p>Bharathanatyam</p>
+                    <p>Kuchipudi</p>
+                    <p>Odissi</p>
+                    <p>Mohiniyattam</p>
+                </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq2')">* What is the eligibility criteria for
+                    admission
+                    in these classes?</div>
+                <div id="faq2" class="faq-answer">
+                    <p>Indian Classical Bharatanatyam Dance - 3 years to NO upper age limit; NO gender limit.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq3')">* What is the class timing for Bharatnatyam,
+                    Odissi, Kuchipudi and Mohiniyattam?</div>
+                <div id="faq3" class="faq-answer">
+                    <p>We have Online and Offline classes scheduled for 24x7.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq4')">* What other classes are conducted in Temple of
+                    Dance?</div>
+                <div id="faq4" class="faq-answer">
+                    <p>We conduct Taekwondo class.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html#"><i
+                                    class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html#"><i
+                                    class="fas fa-film"></i> Courses</a></li>
+                        <li><a href="https://maps.app.goo.gl/735TghxAsDbQ7hqh7"><i class="fas fa-map-marker-alt"></i>
+                                Location</a></li>
+                        <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/contact%20us.html#"><i
+                                    class="fas fa-info-circle"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center text-muted">
+                <p>Copyright &copy; 2024 Temple of Dance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-wptzXPgAPBcl6rffC/EAuIeUhSrs6lHDkCT6OQZLeW6P1fsx/YVHBuWzXQwPWc8N"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+            } else {
+                answer.classList.add('show');
+            }
+        }
+    </script>
+</body>
+
+</html>

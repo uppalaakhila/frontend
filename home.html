@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-zrp/lOFPVQM57RStwzYJ+JhrBEQvXtnJzA4XQPQp1JRFlVmaoG7YTXDWwERjZW6l" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Temple of Dance</title>
+  <style>
+    /* Your existing CSS styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar-brand img {
+      width: 140px;
+      height: 90px;
+      position: relative;
+      left: 8%;
+    }
+
+    .navbar .nav-link {
+      color: black;
+
+      font-family: 5rem;
+    }
+
+    .navbar .nav-link:hover {
+      color: purple;
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #fff;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .dropdown-item {
+      color: blue;
+    }
+
+    .navbar .dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+
+
+    .parent {
+      display: flex;
+      border: none;
+      justify-content: space-evenly;
+    }
+
+    .about {
+      color: brown;
+      font-family: poppins;
+      font-size: 3rem;
+      margin-left: 650px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      font-family: poppins;
+
+    }
+
+    .card-text {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* danceform */
+    .danceform {
+      color: brown;
+      font-family: poppins;
+      font-size: 3rem;
+      margin-left: 650px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    /* Adjusting carousel size */
+    #carouselExampleFade {
+      width: 100%;
+      margin: auto;
+    }
+
+    .carousel-item img {
+      max-height: 760px;
+      width: 200px;
+      margin: 0 auto;
+      /* Center the image horizontally */
+    }
+
+    .danceform {
+      margin-left: 40%;
+    }
+
+    .carousel-caption {
+      color: white;
+      font-family: poppins;
+      font-size: 2.5rem;
+      margin-left: 900px;
+      margin-top: 200px;
+      margin-bottom: 630px;
+    }
+
+    .card-title-a {
+      color:yellow;
+      font-family: poppins;
+      font-size: 3.2rem;
+      margin-top: 17%;
+      margin-left: 12%;
+      font-style: unset;
+    }
+
+    .card-text-b {
+      color: yellow;
+      font-family: poppins;
+      font-size: 3rem;
+      margin-top: 0%;
+      margin-left: 69%;
+      font-style: unset;
+    }
+
+    .team {
+      color: brown;
+      font-family: poppins;
+      font-size: 3.5rem;
+      margin-left: 650px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .card-title-x {
+      color: brown;
+      font-family: poppins;
+      font-size: 3rem;
+      margin-top: 2.5%;
+      margin-left: 5%;
+      margin-bottom: 2%;
+
+    }
+
+    .card-text-y {
+      color: black;
+      font-size: 1.2rem;
+      font-family: poppins;
+      line-height: 170%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    /* Adjusting card layout */
+    .card {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+
+    .scroling {
+      background-color: white;
+    }
+
+    .programs {
+      color: brown;
+      font-family: poppins;
+      font-size: 3rem;
+      margin-top: 0.5%;
+      margin-left: 45%;
+      margin-bottom: 0%;
+    }
+
+    .footer {
+      padding: 50px 0;
+    }
+
+    .footer ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer a {
+      color: white;
+    }
+
+    .footer a:hover {
+      color: #ccc;
+    }
+     /* Sticky Navbar */
+     .sticky-top {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg  ">
+    <a class="navbar-brand" href="#">
+      <img src="navlogo.png" alt="">
+    </a>
+    <img
+      src="https://www.transparentpng.com/thumb/dancing/Indian-outfit-and-dancing-girl-design-png-transparent-gOihd2.png"
+      width="8%" height="4%" class="pic1">
+    <img
+      src="pic3.png"
+      width="8%" height="4%" class="pic3">
+    <img src="pic4.png" width="8%" height="4%" class="pic4">
+    <img src="pic5.png" width="8%" height="4%"
+      class="pic5">
+    <img src="pic7.png" width="7%" height="2%" class="pic7">
+    <img src="pic8.png" width="8%" height="4%"
+      class="pic8">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html"><i class="fas fa-home"></i> HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html"><i class="fas fa-info-circle"></i> ABOUT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCourses" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-film"></i> COURSES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownCourses">
+            <a class="dropdown-item" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html#">DANCE</a>
+            <a class="dropdown-item" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/danceworkshop.html">DANCE WORKSHOP</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLocation" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-map-marker-alt"></i> LOCATION
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownLocation">
+            <a class="dropdown-item" href="https://maps.app.goo.gl/735TghxAsDbQ7hqh7">Address: Road No.
+              45,JubileHills, Hyderabad, Telangana 500034</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/contact%20us.html"><i class="fas fa-info-circle"></i> CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="card">
+      <div class="row">
+        <div class="col-11 col-sm-12 col-md-6 col-lg-12">
+          <div class="card bg-dark">
+            <video autoplay loop muted playsinline src="video.mp4" class="card-video" width="100%"></video>
+            <div class="card-img-overlay">
+              <P class="card-title-a">WELCOME TO</P>
+              <p class="card-text-b">TEMPLE OF DANCE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="about"><b>About Us</b></p>
+    <!-- ABOUT US -->
+
+    <div class="parent">
+      <div class="card" style="width: 20rem;">
+        <img src="C:\Users\91630\OneDrive\Desktop\bootstrap\bs\aimage1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dedicated Resources</h5>
+          <p class="card-text">Our classes are conducted by devoted and skilled teachers. Using time-tested strategies
+            we make sure that every student gets to identify and hone their skill. We provide personal attention to each
+            while tailoring learning methods compatible with their need.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem;">
+        <img src="C:\Users\91630\OneDrive\Desktop\bootstrap\bs\aimage2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Inclusive Curriculum</h5>
+          <p class="card-text">We embrace a learning environment that will prepare you for the path ahead. Our classes
+            incorporate traditional and contemporary learning styles with hands-
+
+            on experience with the look, style, and backdrop of a performance.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 19rem;">
+        <img src="C:\Users\91630\OneDrive\Desktop\bootstrap\bs\aimage3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text">Your success as a performer and an individual is our priority. To support our
+
+            the mission we create a learning environment that has a disciplined structure, pays
+
+            attention to detail, imbibing professionalism, values, and ethics that enable
+
+            wholesome development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DANCE FORMS -->
+
+    <p class="danceform"><b>Dance forms</b></p>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://kamyashinde.github.io/old_Bharatanatyam/bnd-image-11.png" class="d-block w-100"
+            alt="KUCHIPUDI">
+          <div class="carousel-caption d-none d-md-block">
+            <p>KUCHIPUDI</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/Uog4s01i5eQ/maxresdefault.jpg" class="d-block w-100" alt="BHARATHANATYAM">
+          <div class="carousel-caption d-none d-md-block">
+            <p>BHARATHANATYAM</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://s4.scoopwhoop.com/anj/sw/af2d814d-3cce-4c30-abe2-30e7e700b0d0.jpg" class="d-block w-100"
+            alt="ODISSI">
+          <div class="carousel-caption d-none d-md-block">
+            <p>ODISSI</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://th-thumbnailer.cdn-si-edu.com/U1VREPE5lEvKOvWy6Z3WIpguhTk=/fit-in/1072x0/https://tf-cmsv2-photocontest-smithsonianmag-prod-approved.s3.amazonaws.com/9eedfd57-a17f-41b7-b605-e22dc81d17a2.jpg"
+            class="d-block w-100" alt="MOHINIYATTAM">
+          <div class="carousel-caption d-none d-md-block">
+            <p>MOHINIYATTAM</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://mediaim.expedia.com/localexpert/213788/532e75b6-04d7-4b01-9a0c-0a41fcd3094c.jpg"
+            class="d-block w-100" alt="KATHAKALI">
+          <div class="carousel-caption d-none d-md-block">
+            <p>KATHAKALI</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- OUR TEAM -->
+    <div class="container1 bg-light">
+
+      <p class="team">Our Team</p>
+      <div class="card mb-3">
+        <div class="text-center">
+          <img src="team.png" class="card-img-top" alt="..." style="width: 80%;">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title-x">Why Temple of Dance?</h5>
+          <p class="card-text-y">Rudragni Creative & Classical Dance Academy is not only an institution but a platform
+            for realizing dreams. We follow a holistic personalized approach.
+            The classical dances of India approach learning beyond mere physical activities. While the body is
+            undoubtedly the prime instrument for dance, dance pedagogy integrates invaluable lessons of culture,
+            history, and philosophy that are taught and analyzed through an empowering lens that radically opens the
+            minds of the students. While the wonderment as the physical body is pushed to its maximum potential, there
+            are other subliminal learnings that enhance the crucial body-mind connection, that is the basic premise of
+            Indian classical dance. Classical dance skillfully weaves abstract notions of Joy, Beauty, Values,
+            Aspirations, Myth, and Spirituality.
+            Through the teaching-learning process, students of classical dance unravel the complex inter-linkages
+            between the classical dance tradition with other disciplines: Philosophy, Ritual, Religion, Myths, Ancient
+            texts, Poetry, Literature, Art (Painting and Sculpture), Cultural Studies, Yoga, Handicrafts and Handlooms
+            and Beauty and Aesthetics. The classical dance journey thus becomes a live voyage of learning multiple
+            skills.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="scroling">
+      <p class="programs">Programmes</p>
+      
+      <marquee behaviour="scroll" direction="left" scrollamount="12" loop="8">
+
+
+        <a href="https://youtu.be/G9DWeQ2z7qk"> <img src="performance.png" alt="" class="imageone" height="300px" width="280px">
+
+          <a href="https://youtu.be/G9DWeQ2z7qk"> <img src="gita govindam.png" alt="" class="imageone" height="300px" width="280px">
+
+            <a href="https://youtu.be/AZhKtUJiz74"> <img src="compostion.png" alt="" class="imageone" height="300px" width="280px">
+
+              <a href="https://youtu.be/YGSKvyHDkhU"> <img src="master.png" alt="" class="imageone" height="300px" width="280px">
+
+                <a href="https://youtu.be/J_lJcPEqSwI"> <img src="techniques.png" alt="" class="imageone" height="300px" width="280px">
+
+                  <a href="https://youtu.be/sLl4grx5Rio"> <img src="intermediate.png" alt="" class="imageone" height="300px" width="280px">
+
+                    <a href="https://youtu.be/xWCU-yWVW0Y"> <img src="beginners.png" alt="" class="imageone"
+                        height="300px" width="280px">
+
+      </marquee>
+
+    </div>
+
+
+    <div class="scroling">
+      <p class="programs">videos</p>
+      <marquee behaviour="scroll" direction="right" scrollamount="12" loop="infinite">
+
+        <a href="https://youtu.be/mrjFn9voVY8"> <img src="gita.png" class="imageone" height="300px" width="280px">
+
+          <a href="https://youtu.be/mrjFn9voVY8"> <img src="yaksha.png" alt="" class="imageone" height="300px" width="280px">
+
+            <a href="https://youtu.be/xcPwhRP_me8" href="https://youtu.be/OZzo0xh_U2U"> <img src="kuttiyam.png" alt="" class="imageone" height="300px" width="280px">
+
+              <a href="https://youtu.be/PGrgqMP4mYs"> <img src="odi.png" alt="" class="imageone" height="300px" width="280px">
+
+                <a href="https://youtu.be/I-YgDTZ3p0c"> <img src="neela.png" alt="" class="imageone" height="300px" width="280px">
+
+                  <a href="https://youtu.be/nH96sVBrWZs" href="https://youtu.be/y3lJhP9j5Uo"> <img src="ottan.png" alt="" class="imageone" height="300px" width="280px">
+
+                    <a href="https://youtu.be/kFdloqxNeps"> <img src="mohi.png" alt="" class="imageone" height="300px" width="280px">
+
+                      <a href="https://youtu.be/7os8FBB6WTc" href="https://youtu.be/09e43OXF69I"> <img src="kathakali.png" alt="" class="imageone" height="300px" width="280px">
+
+                        <a href="https://youtu.be/0u_Fl0M8HHM"> <img src="bharatha.png" alt="" class="imageone"
+                            height="300px" width="280px">
+
+      </marquee>
+
+    </div>
+
+<!-- FOOTER -->
+<footer class="footer bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 sm-12">
+        <h5>Follow Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/dance.html#"><i class="fas fa-film"></i> Courses</a></li>
+          <li><a href="https://maps.app.goo.gl/735TghxAsDbQ7hqh7"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+          <li><a href="file:///C:/Users/91630/OneDrive/Desktop/bootstrap/bs/contact%20us.html#"><i class="fas fa-info-circle"></i> Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center text-muted">
+      <p>Copyright &copy; 2024 Temple of Dance. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>4
